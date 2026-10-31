@@ -10,7 +10,9 @@ Sistema de escritorio para gestión de inventario, punto de venta y administraci
 
 La V1 utiliza SQLite en el mismo equipo que ejecuta la aplicación. La operación comercial local no depende de conexión a Internet; el respaldo externo en la nube es opcional. Excel funciona como mecanismo de importación y exportación, mientras que la base de datos mantiene el estado del sistema.
 
-> **Portafolio público:** esta copia sanitizada corresponde al código local v1.16.4; no representa una release pública ni un paquete de instalación certificado. La licencia está pendiente de elección.
+> **Sobre esta publicación:** código v1.16.4 preparado para portafolio, sin bases de datos ni archivos privados. ArteInventariado fue desarrollado a medida para un negocio de artesanías en El Salvador; su utilización en otros negocios puede requerir adaptaciones y validación de sus procesos comerciales.
+>
+> La solución incluye el código de Setup, Launcher y actualización, junto con scripts para generar los paquetes de instalación. El código original de esta copia pública se comparte bajo [licencia MIT](LICENSE).
 
 [Galería del sistema](#galería-del-sistema) · [Funcionalidades](#funcionalidades-implementadas) · [Arquitectura](#arquitectura-y-estructura-del-repositorio) · [Compilación](#compilación-y-desarrollo)
 
@@ -414,3 +416,11 @@ El proyecto permite mostrar experiencia en desarrollo de software de escritorio 
 - Manejo de archivos y recursos visuales sin cargar originales innecesariamente en los listados.
 - Ingeniería de instalación, actualización, privilegios, respaldo, restauración y recuperación ante fallos.
 - Pruebas automatizadas sobre flujos comerciales y componentes de infraestructura.
+
+## Licencia
+
+Copyright (c) 2026 Miguel Miranda.
+
+El código original de este repositorio se publica bajo la [licencia MIT](LICENSE). Permite su uso, modificación y distribución, incluso con fines comerciales, conservando el aviso de autoría y el texto de la licencia.
+
+Las dependencias de terceros conservan sus propias licencias. Esta licencia no concede derechos sobre marcas, logotipos ni fotografías de terceros que aparezcan en las capturas.
