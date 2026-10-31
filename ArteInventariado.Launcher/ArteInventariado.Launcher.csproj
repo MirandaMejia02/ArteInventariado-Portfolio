@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\ArteInventariado.Application\ArteInventariado.Application.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\ArteInventariado.Infrastructure\ArteInventariadoPathProvider.cs" Link="Shared\ArteInventariadoPathProvider.cs" />
+    <Compile Include="..\ArteInventariado.Infrastructure\LocalApplicationDataPathProvider.cs" Link="Shared\LocalApplicationDataPathProvider.cs" />
+    <Compile Include="..\ArteInventariado.Infrastructure\Updater\StableDeploymentBootstrap.cs" Link="Shared\StableDeploymentBootstrap.cs" />
+    <Compile Include="..\ArteInventariado.Infrastructure\Updater\StableLauncherCoordinator.cs" Link="Shared\StableLauncherCoordinator.cs" />
+    <Compile Include="..\ArteInventariado.Infrastructure\Updater\UpdateLauncher.cs" Link="Shared\UpdateLauncher.cs" />
+    <Compile Include="..\ArteInventariado.Infrastructure\Updater\MachineWideUpdateGuard.cs" Link="Shared\MachineWideUpdateGuard.cs" />
+    <Compile Include="..\ArteInventariado.Infrastructure\Installation\MachineWideElevation.cs" Link="Shared\MachineWideElevation.cs" />
+    <Compile Include="..\ArteInventariado.Infrastructure\Updater\UpdateLaunchTargetResolver.cs" Link="Shared\UpdateLaunchTargetResolver.cs" />
+    <Compile Include="..\ArteInventariado.Infrastructure\Updater\UpdatePointerStore.cs" Link="Shared\UpdatePointerStore.cs" />
+    <Compile Include="..\ArteInventariado.Infrastructure\Updater\UpdateRecoveryPolicy.cs" Link="Shared\UpdateRecoveryPolicy.cs" />
+    <Compile Include="..\ArteInventariado.Infrastructure\Updater\UpdateRuntimePaths.cs" Link="Shared\UpdateRuntimePaths.cs" />
+    <Compile Include="..\ArteInventariado.Infrastructure\Updater\UpdateStateStore.cs" Link="Shared\UpdateStateStore.cs" />
+    <Compile Include="..\ArteInventariado.Infrastructure\Updater\UpdateVersion.cs" Link="Shared\UpdateVersion.cs" />
+    <Compile Include="..\ArteInventariado.Infrastructure\Updater\MachineWideUpdateDiagnostics.cs" Link="Shared\MachineWideUpdateDiagnostics.cs" />
+    <Compile Include="..\ArteInventariado.Infrastructure\Updater\MachineWideProcessWait.cs" Link="Shared\MachineWideProcessWait.cs" />
+    <Compile Include="..\ArteInventariado.Infrastructure\Updater\WindowsShortcutManager.cs" Link="Shared\WindowsShortcutManager.cs" />
+  </ItemGroup>
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows10.0.19041.0</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+</Project>

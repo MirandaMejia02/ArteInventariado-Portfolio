@@ -1,0 +1,11 @@
+<Project>
+  <PropertyGroup>
+    <VersionPrefix>1.16.4</VersionPrefix>
+    <AssemblyVersion>1.13.0.0</AssemblyVersion>
+    <FileVersion>1.16.4.0</FileVersion>
+    <InformationalVersion>1.16.4</InformationalVersion>
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+    <Product>ArteInventariado</Product>
+    <Company>ArteInventariado</Company>
+  </PropertyGroup>
+</Project>
