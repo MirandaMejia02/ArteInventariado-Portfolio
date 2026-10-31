@@ -2,21 +2,11 @@
 
 Sistema de escritorio para gestión de inventario, punto de venta y administración comercial de un negocio minorista de artesanías. Integra ventas, existencias, caja, compras, crédito, pedidos, reportes y recuperación de datos en una aplicación local para Windows.
 
-**Referencia funcional: v1.16.4 · C# / .NET 10 · WinForms · EF Core / SQLite · Windows x64**
-
-> Esta documentación describe el código de la referencia local v1.16.4 inspeccionada. No implica que exista una release pública de esa versión ni que todas las ramas de GitHub contengan el mismo alcance. La versión de cada checkout se declara en `Directory.Build.props`.
-
-> Esta copia para portfolio está sanitizada: no contiene bases de datos, respaldos, documentos de operación ni el logo comercial con información personal. Los nombres y ejemplos del perfil del negocio se sustituyeron por valores genéricos. No hereda el historial privado del repositorio original.
-
-> Validación de esta copia (31 de octubre de 2026): compilación Release completada con 0 errores y 0 advertencias. No se ejecutaron las pruebas automatizadas. Esta publicación de código v1.16.4 no constituye una release pública de la aplicación.
-
-> Los identificadores de cuenta, ARN, nombres de bucket y credenciales presentes en ejemplos y pruebas son valores sintéticos. No se incluyen credenciales ni configuraciones de la instalación real o de su respaldo S3.
+**v1.16.4 · C# / .NET 10 · WinForms · EF Core / SQLite · Windows x64**
 
 La V1 utiliza SQLite en el mismo equipo que ejecuta la aplicación. La operación comercial local no depende de conexión a Internet; el respaldo externo en la nube es opcional. Excel funciona como mecanismo de importación y exportación, mientras que la base de datos mantiene el estado del sistema.
 
 ## Estado del proyecto
-
-Los módulos descritos como **implementados** cuentan con contratos, servicios y pantallas o procesos operativos en la referencia inspeccionada. Su presencia en código se distingue de la certificación de una instalación, un dispositivo físico o una release publicada.
 
 - **Implementado:** catálogo con SKU, inventario por ubicación, POS tradicional y rápido, correcciones de ventas, caja, clientes y crédito, proveedores y compras, cotizaciones, pedidos personalizados, pagos a empleados, analítica, reportes, auditoría y configuración.
 - **Implementado como infraestructura:** respaldo y restauración, respaldo externo opcional, recuperación de datos, estaciones de consulta, instalación para todos los usuarios de Windows y actualización con recuperación.
@@ -168,7 +158,7 @@ El origen externo de fondos identifica cómo se financió una operación; no cre
 - Recuperación de caja abierta tras una interrupción y regularización administrativa de cierres, con motivo y auditoría.
 - Aviso al cerrar sesión cuando queda una caja abierta; la salida de la aplicación no cuenta ni cierra el efectivo automáticamente.
 
-La referencia v1.16.4 presenta por separado el **saldo teórico acumulado**, el **último conteo físico** y una **suma referencial de saldos de sesiones del día**. Esa suma es informativa: no se utiliza como apertura siguiente ni como dinero disponible, porque varias sesiones pueden estar contando el mismo efectivo.
+Caja diaria presenta por separado el **saldo teórico acumulado**, el **último conteo físico** y una **suma referencial de saldos de sesiones del día**. Esa suma es informativa: no se utiliza como apertura siguiente ni como dinero disponible, porque varias sesiones pueden estar contando el mismo efectivo.
 
 ### Empleados y pagos administrativos
 
@@ -259,7 +249,7 @@ WinForms       → Application + Infrastructure
 Tests          → Application + Infrastructure
 ```
 
-`WinForms` participa en la composición de dependencias. La separación es por responsabilidades; no se afirma una implementación completa de microservicios, event sourcing o una arquitectura distribuida.
+`WinForms` participa en la composición de dependencias; los servicios concentran las reglas comerciales y el acceso a datos.
 
 ## Modelo de datos e integridad
 
@@ -299,9 +289,9 @@ El repositorio contiene pruebas unitarias y de integración con xUnit para, entr
 - Analítica, reportes, exportación y paginación de impresión.
 - Instalación, ACL, actualización, diagnóstico, backup, restauración y recuperación externa.
 
-También existen recorridos de comprobación visual y funcional para formularios, resoluciones y escalas DPI. Las notas de cada versión registran las validaciones ejecutadas y sus límites.
+También existen recorridos de comprobación visual y funcional para formularios, resoluciones y escalas DPI.
 
-Este README no declara un porcentaje de cobertura, una ejecución actual de toda la suite ni un estado de CI que no haya sido verificado. La validación del código de un checkout debe ejecutarse en el entorno correspondiente.
+La compilación Release se verificó con 0 errores y 0 advertencias. Las pruebas automatizadas no se ejecutaron para esta publicación.
 
 ## Compilación y desarrollo
 
@@ -364,13 +354,3 @@ El proyecto permite mostrar experiencia en desarrollo de software de escritorio 
 - Manejo de archivos y recursos visuales sin cargar originales innecesariamente en los listados.
 - Ingeniería de instalación, actualización, privilegios, respaldo, restauración y recuperación ante fallos.
 - Pruebas automatizadas sobre flujos comerciales y componentes de infraestructura.
-
-## Publicación responsable
-
-El README y las demostraciones deben utilizar información técnica y datos ficticios. Las bases de datos, respaldos, logs reales, credenciales, configuraciones privadas de nube y documentos comerciales del negocio no forman parte del material público de demostración.
-
-Los tickets y reportes de la aplicación se describen como documentos operativos; no se atribuye validez fiscal que no esté implementada y certificada. Los valores de demostración de esta copia no representan clientes, proveedores ni operaciones reales.
-
-## Licencia
-
-No se identificó un archivo de licencia en la referencia inspeccionada. La licencia del proyecto queda pendiente de declaración expresa en un archivo `LICENSE`; este documento no le asigna una licencia.
