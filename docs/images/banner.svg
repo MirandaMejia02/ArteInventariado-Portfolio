@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="440" viewBox="0 0 1600 440" role="img" aria-labelledby="title desc">
+  <title id="title">ArteInventariado — Inventario, ventas y gestión comercial</title>
+  <desc id="desc">Portada del portafolio de una aplicación Windows desarrollada con C#, .NET 10, WinForms y SQLite. Fondo granate con acentos rosa.</desc>
+  <defs>
+    <linearGradient id="background" x2="1" y2="1">
+      <stop stop-color="#4d1d37"/>
+      <stop offset="1" stop-color="#793253"/>
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#fff" stroke-opacity=".045"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="440" rx="24" fill="url(#background)"/>
+  <rect width="1600" height="440" rx="24" fill="url(#grid)"/>
+  <circle cx="1480" cy="60" r="260" fill="#e02580" opacity=".13"/>
+  <circle cx="1420" cy="420" r="180" fill="#ffb1d6" opacity=".07"/>
+  <rect x="76" y="74" width="7" height="285" rx="3" fill="#ff72b0"/>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="112" y="110" fill="#ffc8e2" font-size="19" font-weight="600" letter-spacing="4">PORTAFOLIO · APLICACIÓN DE ESCRITORIO</text>
+    <text x="108" y="210" fill="#fff" font-size="83" font-weight="700">ArteInventariado</text>
+    <text x="112" y="266" fill="#ffe3f0" font-size="29">Inventario, ventas y gestión comercial</text>
+    <text x="112" y="337" fill="#ffc8e2" font-size="23">C#  /  .NET 10  /  WinForms  /  EF Core + SQLite</text>
+  </g>
+  <g transform="translate(1280 145)" fill="none" stroke="#ffc8e2" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" opacity=".85">
+    <path d="M0 50 90 0 180 50 90 100Z M0 50v105l90 50 90-50V50 M90 100v105 M45 25l90 50"/>
+    <path d="m118 147 17 17 36-38" stroke="#ff72b0" stroke-width="8"/>
+  </g>
+</svg>

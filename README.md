@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/images/banner.svg" alt="ArteInventariado — Inventario, ventas y gestión comercial" width="100%">
+</p>
+
 # ArteInventariado
 
 Sistema de escritorio para gestión de inventario, punto de venta y administración comercial de un negocio minorista de artesanías. Integra ventas, existencias, caja, compras, crédito, pedidos, reportes y recuperación de datos en una aplicación local para Windows.
@@ -5,6 +9,62 @@ Sistema de escritorio para gestión de inventario, punto de venta y administraci
 **v1.16.4 · C# / .NET 10 · WinForms · EF Core / SQLite · Windows x64**
 
 La V1 utiliza SQLite en el mismo equipo que ejecuta la aplicación. La operación comercial local no depende de conexión a Internet; el respaldo externo en la nube es opcional. Excel funciona como mecanismo de importación y exportación, mientras que la base de datos mantiene el estado del sistema.
+
+> **Portafolio público:** esta copia sanitizada corresponde al código local v1.16.4; no representa una release pública ni un paquete de instalación certificado. La licencia está pendiente de elección.
+
+[Galería del sistema](#galería-del-sistema) · [Funcionalidades](#funcionalidades-implementadas) · [Arquitectura](#arquitectura-y-estructura-del-repositorio) · [Compilación](#compilación-y-desarrollo)
+
+## Galería del sistema
+
+Ocho capturas auténticas de ArteInventariado, organizadas por área de trabajo. Los datos, precios e importes mostrados son ficticios, según lo confirmado por el autor; las fotografías de los productos son reales. Las capturas se conservan sin alteraciones.
+
+Cada imagen puede abrirse para consultar sus detalles a tamaño completo.
+
+### Dashboard de administrador
+
+Vista general con indicadores, navegación por módulos, actividad reciente y accesos rápidos.
+
+[![Dashboard de administrador de ArteInventariado](docs/images/dashboard-administrador.png)](docs/images/dashboard-administrador.png)
+
+### Acceso y roles
+
+**Inicio de sesión** · Acceso local e identidad visual de la aplicación.
+
+<p align="center">
+  <a href="docs/images/login.png"><img src="docs/images/login.png" alt="Inicio de sesión de ArteInventariado v1.16.4" width="360"></a>
+</p>
+
+**Panel de empleado** · Navegación y accesos operativos para el rol EMPLEADO.
+
+[![Panel de empleado con accesos a ventas, devoluciones, caja e inventario](docs/images/panel-empleado.png)](docs/images/panel-empleado.png)
+
+### Inventario y ventas
+
+**Consulta de inventario** · Productos y SKU, filtros, existencias por ubicación, reservas, disponibilidad e imagen del artículo.
+
+[![Consulta de inventario por SKU y ubicación](docs/images/inventario.png)](docs/images/inventario.png)
+
+**Punto de venta** · Catálogo visual, búsqueda manual o por código, carrito y resumen de cobro.
+
+[![Punto de venta con catálogo visual y carrito](docs/images/punto-de-venta.png)](docs/images/punto-de-venta.png)
+
+### Caja diaria
+
+Vista de empleado con estado de caja, entradas y salidas físicas, métodos no físicos y controles de apertura y cierre.
+
+[![Caja diaria del empleado y movimientos de efectivo](docs/images/caja-diaria.png)](docs/images/caja-diaria.png)
+
+### Análisis y reportes
+
+**Centro de análisis** · Indicadores, comparación de períodos y navegación entre áreas comerciales y financieras.
+
+[![Centro de análisis con indicadores y tendencia del período](docs/images/analisis.png)](docs/images/analisis.png)
+
+**Centro de reportes** · Grupos de reportes, filtros, resultados y opciones de exportación o impresión.
+
+[![Centro de reportes con grupos, filtros y exportación a Excel](docs/images/reportes.png)](docs/images/reportes.png)
+
+---
 
 ## Estado del proyecto
 
