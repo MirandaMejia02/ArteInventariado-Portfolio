@@ -1,5 +1,20 @@
 <p align="center">
-  <img src="docs/images/banner.svg" alt="ArteInventariado — Inventario, ventas y gestión comercial" width="100%">
+  <img src="docs/images/banner.png" alt="ArteInventariado — Tu inventario, tus ventas, en un solo lugar. Capturas reales del sistema." width="100%">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/C%23-512BD4?style=for-the-badge" alt="C#">
+  <img src="https://img.shields.io/badge/.NET-10-512BD4?style=for-the-badge&amp;logo=dotnet&amp;logoColor=white" alt=".NET 10">
+  <img src="https://img.shields.io/badge/WinForms-7A2E5D?style=for-the-badge" alt="Windows Forms">
+  <img src="https://img.shields.io/badge/EF_Core-10-8B3A68?style=for-the-badge" alt="Entity Framework Core 10">
+  <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&amp;logo=sqlite&amp;logoColor=white" alt="SQLite">
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/ClosedXML-217346?style=for-the-badge" alt="ClosedXML">
+  <img src="https://img.shields.io/badge/LiveCharts2-CF247B?style=for-the-badge" alt="LiveCharts2">
+  <img src="https://img.shields.io/badge/xUnit-5C2D91?style=for-the-badge" alt="xUnit, framework de pruebas">
+  <img src="https://img.shields.io/badge/Versi%C3%B3n-1.16.4-71304F?style=for-the-badge" alt="Versión del código 1.16.4">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/Licencia-MIT-368663?style=for-the-badge" alt="Licencia MIT"></a>
 </p>
 
 # ArteInventariado
