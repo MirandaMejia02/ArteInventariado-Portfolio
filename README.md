@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/images/banner.png" alt="ArteInventariado — Tu inventario, tus ventas, en un solo lugar. Capturas reales del sistema." width="100%">
+  <img src="docs/images/banner.png" alt="ArteInventariado — Cada pieza cuenta. Portada con una captura real del punto de venta." width="100%">
 </p>
 
 <p align="center">
